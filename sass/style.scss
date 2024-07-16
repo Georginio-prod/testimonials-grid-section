@@ -92,8 +92,25 @@ body {
     opacity: 70%;
     line-height: 18px;
   }
+
+  &--b1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &--b2 {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 70%;
+    line-height: 18px;
+  }
 }
 
+.container__one--h2 {
+  color: #CFCFCF;
+  opacity: 70%;
+}
 .container__one {
   height: 282px;
   background-color: #733fc8;
