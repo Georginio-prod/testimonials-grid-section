@@ -40,4 +40,8 @@ Ce fichier README fournit une vue d'ensemble complète du projet, incluant la de
 
 # github link: 
 https://github.com/Georginio-prod/testimonials-grid-section
+
 # vercel link:
+
+# frontend mentor 
+https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
