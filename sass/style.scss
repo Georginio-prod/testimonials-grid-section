@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #ECF2F8;
+  background-color: #ecf2f8;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,6 +22,43 @@ body {
   justify-content: center;
 }
 
+
+// @media (max-width: 375px) {
+//   .container {
+//     width: 375px;
+//     margin: 10px; /* Ajustement de la marge */
+//   }
+  
+//   .container__grid {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 24px;
+//   }
+  
+//   .container__one,
+//   .container__two,
+//   .container__tree,
+//   .container__four,
+//   .container__five {
+//     width: 100%;
+//     padding-left: 16px; /* Ajustement de la taille */
+//     padding-right: 16px; /* Ajustement de la taille */
+//     padding-top: 13px; /* Ajustement de la taille */
+//   }
+  
+//   .container__one--image {
+//     right: 40px; /* Ajustement de la taille */
+//   }
+  
+//   .container__one,
+//   .container__two,
+//   .container__tree,
+//   .container__four,
+//   .container__five {
+//     height: auto; /* Ajustement de la taille */
+//   }
+// } 
+
 .container__grid {
   display: grid;
   width: 100%;
@@ -32,51 +69,171 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
-.container__one {
+.container__one,
+.container__two,
+.container__tree,
+.container__four,
+.container__five {
   width: 100%;
-  height: 282px;
-  background-color: #733FC8;
-  grid-row: 1;
-  grid-column: 1 /span 2;
   border-radius: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 26px;
+
+  &--h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  &--h2 {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 70%;
+    line-height: 18px;
+  }
 }
 
-.image {
-  z-index: -1;
-  float: right;
-  padding-right: 100px;
-}
-.container__two {
-  width: 100%;
+.container__one {
   height: 282px;
-  background-color: #48556A;
+  background-color: #733fc8;
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+
+  &--image {
+    z-index: -1;
+    position: absolute;
+    right: 80px;
+  }
+}
+
+.container__two {
+  height: 282px;
+  background-color: #48556a;
   grid-row: 1;
   grid-column: 3;
-  border-radius: 10px;
+  color: white;
 }
 
 .container__tree {
-  width: 100%;
   height: 266px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   grid-row: 2;
   grid-column: 1;
-  border-radius: 10px;
+  color: #48556a;
 }
 
 .container__four {
-  width: 100%;
   height: 266px;
-  background-color: #19202D;
+  background-color: #19202d;
   grid-row: 2;
   grid-column: 2 / span 2;
-  border-radius: 10px;
+  color: #ecf2f8;
 }
 
 .container__five {
-  width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   grid-row: 1 / span 2;
   grid-column: 4;
-  border-radius: 10px;
+  color: #48556a;
+
+  &--H1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &--H2 {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 70%;
+    line-height: 18px;
+  }
+}
+
+.space {
+  padding-left: 17px;
+}
+
+.space--h1 {
+  line-height: 13px;
+  padding-bottom: 4px;
+}
+
+.space--h2 {
+  line-height: 11px;
+}
+
+.texte {
+  display: flex;
+  margin-bottom: 18px;
+  > div {
+    :first-child {
+      color: #ffffff;
+      font-size: 13px;
+    }
+    :last-child {
+      color: rgb(255, 255, 255);
+      font-size: 11px;
+      opacity: 50%;
+    }
+  }
+}
+
+.texte1 {
+  display: flex;
+  margin-bottom: 18px;
+  > div {
+    :first-child {
+      color: #48556a;
+      font-size: 13px;
+    }
+    :last-child {
+      color: #48556a;
+      font-size: 11px;
+      opacity: 50%;
+    }
+  }
+}
+
+.container__image {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #a775f1;
+  border-radius: 100%;
+}
+
+.container__image1 {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 100%;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  color: #060606;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.attribution a:visited {
+  color: rgb(0, 0, 0); 
+}
+
+.attribution a:hover {
+  color: rgb(102, 11, 11); 
 }
